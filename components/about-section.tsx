@@ -215,26 +215,6 @@ export default function AboutSection() {
               />
             ))}
           </div>
-
-          <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill, index) => (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Badge
-                  variant="secondary"
-                  className="px-4 py-2 text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors flex items-center gap-2"
-                >
-                  <skill.icon />
-                  {skill.name}
-                </Badge>
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
         <motion.div
